@@ -7,6 +7,7 @@ const cors = require('cors');
 const userRoutes = require('./routes/users');
 const bodyParser = require('body-parser');
 // const PORT = process.env.PORT;
+const port = process.env.PORT || 4000;
 
 const app = express()
 const corsOptions = {
