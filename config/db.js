@@ -5,7 +5,7 @@ console.log(URI);
 
 exports.connectDB =async()=>{
     try{
-        await mongoose.connect(URI);
+        await mongoose.connect(URI || "mongodb://localhost:27017/onlineShop");
         console.log('db connected');
     }catch(error){
         console.log('db not connected');
